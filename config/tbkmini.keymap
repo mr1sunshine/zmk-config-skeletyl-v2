@@ -34,28 +34,28 @@
 
         default_layer {
             bindings = <
-                &kp Q    &kp W       &kp E       &kp R            &kp T            &kp Y    &kp U       &kp I              &kp O            &kp P
-                &kp A    &kp S       &kp D       &kp F            &kp G            &kp H    &kp J       &kp K              &kp L            &kp SEMI
-                &kp Z    &kp X       &kp C       &kp V            &kp B            &kp N    &kp M       &kp COMMA          &kp DOT          &kp FSLH
-                         &kp LALT    &kp LGUI    &lt LWR SPACE                              &kp BSPC    &ht_hld RSE TAB    &mt LSHFT RET
+                &kp Q    &kp W       &kp E       &kp R            &kp T            &kp Y    &kp U             &kp I              &kp O            &kp P
+                &kp A    &kp S       &kp D       &kp F            &kp G            &kp H    &kp J             &kp K              &kp L            &kp SEMI
+                &kp Z    &kp X       &kp C       &kp V            &kp B            &kp N    &kp M             &kp COMMA          &kp DOT          &kp FSLH
+                         &kp LALT    &kp LGUI    &lt LWR SPACE                              &mt LCTRL BSPC    &ht_hld RSE TAB    &mt LSHFT RET
             >;
         };
 
         lower_layer {
             bindings = <
-                &kp EXCL &kp AT    &kp PLUS  &kp EQUAL     &kp BSLH                &kp GRAVE   &kp LBRC      &kp RBRC    &none          &none
-                &kp AMPS &kp HASH  &kp MINUS &kp LS(MINUS) &kp PIPE                &kp TILDE   &kp LS(N9)    &kp LS(N0)  &kp SQT        &kp DQT
-                &kp STAR &kp PRCNT &kp CARET &kp DLLR      &kp FSLH                &none       &kp LBKT      &kp RBKT    &none          &none
-                                  &trans &trans &trans                                    &trans &trans &trans
+                &kp EXCL &kp AT      &kp PLUS    &kp EQUAL        &kp BSLH         &kp GRAVE   &kp LBRC      &kp RBRC    &none          &none
+                &kp AMPS &kp HASH    &kp MINUS   &kp LS(MINUS)    &kp PIPE         &kp TILDE   &kp LS(N9)    &kp LS(N0)  &kp SQT        &kp DQT
+                &kp STAR &kp PRCNT   &kp CARET   &kp DLLR         &kp FSLH         &none       &kp LBKT      &kp RBKT    &none          &none
+                         &trans      &trans      &trans                                        &trans        &trans      &trans
             >;
         };
 
         raise_layer {
             bindings = <
-                &none    &kp N7    &kp N8    &kp N9        &none                   &kp PG_UP   &kp LC(LEFT)  &kp UP      &kp LC(RIGHT)  &none
-                &none    &kp N4    &kp N5    &kp N6        &none                   &kp PG_DN   &kp LEFT      &kp DOWN    &kp RIGHT      &none
-                &none    &kp N1    &kp N2    &kp N3        &kp N0                  &kp NXTSCRN &kp MXSCRN    &kp FLLSCRN &kp LG(LS(UP)) &none
-                                                       &trans &trans &trans                  &trans &trans &trans
+                &none    &kp N7    &kp N8    &kp N9        &kp DLTROW              &kp PG_UP   &kp LC(LEFT)  &kp UP      &kp LC(RIGHT)  &kp ESC
+                &none    &kp N4    &kp N5    &kp N6        &kp RPLACE              &kp PG_DN   &kp LEFT      &kp DOWN    &kp RIGHT      &none
+                &none    &kp N1    &kp N2    &kp N3        &kp N0                  &kp NXTSCRN &kp MXSCRN    &kp FLLSCRN &kp LG(LS(UP)) &kp CAPS
+                         &trans    &trans    &trans                                            &trans        &trans      &trans
             >;
         };
     };
