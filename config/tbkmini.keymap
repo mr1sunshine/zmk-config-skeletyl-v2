@@ -6,6 +6,7 @@
 #define DEFAULT 0
 #define LWR 1
 #define RSE 2
+#define ADJ 3
 
 #define FLLSCRN LC(LG(LA(F)))
 #define NXTSCRN LC(LG(LA(N)))
@@ -56,7 +57,7 @@
                 &kp EXCL            &kp AT              &kp PLUS            &kp EQUAL       &kp BSLH            &kp GRAVE       &kp LBRC        &kp RBRC        &none               &none
                 &kp AMPS            &kp HASH            &kp MINUS           &kp LS(MINUS)   &kp PIPE            &kp TILDE       &kp LS(N9)      &kp LS(N0)      &kp SQT             &kp DQT
                 &kp STAR            &kp PRCNT           &kp CARET           &kp DLLR        &kp FSLH            &none           &kp LBKT        &kp RBKT        &none               &none
-                                    &trans              &trans              &trans                                              &trans          &trans          &trans
+                                    &trans              &trans              &trans                                              &trans          &ht_hld ADJ TAB &trans
             >;
         };
 
@@ -65,6 +66,15 @@
                 &bt BT_CLR          &kp N7              &kp N8              &kp N9          &kp DLTROW          &kp PG_UP       &kp LC(LEFT)    &kp UP          &kp LC(RIGHT)       &kp ESC
                 &none               &kp N4              &kp N5              &kp N6          &kp RPLACE          &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT           &none
                 &none               &kp N1              &kp N2              &kp N3          &kp N0              &kp NXTSCRN     &kp MXSCRN      &kp FLLSCRN     &kp LG(LS(UP))      &kp CAPS
+                                    &trans              &lt ADJ SPACE       &trans                                              &trans          &trans          &trans
+            >;
+        };
+
+        adj_layer {
+            bindings = <
+                &none               &none               &none               &none           &none               &none           &none           &none           &none               &none
+                &none               &kp LC(LA(N4))      &kp LC(LA(N5))      &kp LC(LA(N6))  &none               &none           &none           &none           &none               &none
+                &none               &kp LC(LA(N1))      &kp LC(LA(N2))      &kp LC(LA(N3))  &none               &none           &none           &none           &none               &none
                                     &trans              &trans              &trans                                              &trans          &trans          &trans
             >;
         };
