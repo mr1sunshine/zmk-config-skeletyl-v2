@@ -64,7 +64,7 @@
         raise_layer {
             bindings = <
                 &bt BT_CLR          &kp N7              &kp N8              &kp N9          &kp DLTROW          &kp ESC         &kp LC(LEFT)    &none           &kp LC(RIGHT)       &kp PG_UP
-                &none               &kp N4              &kp N5              &kp N6          &kp RPLACE          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT           &kp PG_DOWN
+                &none               &kp N4              &kp N5              &kp N6          &kp RPLACE          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT           &kp PG_DN
                 &none               &kp N1              &kp N2              &kp N3          &kp N0              &kp NXTSCRN     &kp MXSCRN      &kp FLLSCRN     &kp LG(LS(UP))      &kp CAPS
                                     &trans              &lt ADJ SPACE       &trans                                              &trans          &trans          &trans
             >;
